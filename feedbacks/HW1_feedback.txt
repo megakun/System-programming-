@@ -1,0 +1,26 @@
+HW1 Feedback
+
+
+Test Suite: 215/215
+
+
+Valgrind: 0/5
+
+
+Modularity: 4/5
+(-1) HT helper function factors out some code, but could factor more things out.
+
+
+Blending with starter code: 4/5
+(-1) HT helper function not declared at top of file (definition only) 
+
+Robustness and error checking: 5/5
+
+
+Comments and other style issues: 4/5
+(-1) Needs better function comment on helper function. E.g. does not describe return codes so caller has no idea what to do with the returned value.
+
+Short Answer Questions: 0/5
+(-5) Not answered
+
+Bonus: 0/5

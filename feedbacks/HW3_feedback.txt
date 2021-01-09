@@ -1,0 +1,39 @@
+HW3 Feedback
+
+
+Test Suite: 290/290
+
+
+Valgrind: 5/5
+
+
+Modularity: 3/5
+(-2) QueryProcessor does not properly factor complicated function into
+helpers and/or needs better comments. The helper function and complicated
+code should be commented, and the code in ProcessQuery function could be
+factored out more.
+
+
+Robustness and error checking: 5/5
+
+
+Comments, Blending, and other style issues: 2/5
+(-1) Using reinterpret_cast instead of a more appropriate cast.
+Generally, one should avoid using reinterpret_cast when they can.
+static_cast is more appropriate for step 10 in WriteIndex.cc
+(-1) Uses base types (e.g. void*) when a defined type (e.g. LLPayload_t)
+would have been more appropriate. (i.e. step 13 in WriteIndex.cc)
+(-1) Uses C idiom in C++ code. Should use nullptr instead of NULL for
+step 1 in FileIndexReader.cc
+
+
+Search shell: 4/5
+(-1) Crashes (i.e. Verify333()) when handling input that contains no letters.
+
+
+Short Answer Questions: 4/5
+(-1) Does not have a correct reason for why we don't want a buffer to be on 
+in this use case of file I/O for Q3.
+
+
+Extra Credit: 0/5
